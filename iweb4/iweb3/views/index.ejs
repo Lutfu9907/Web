@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= sayfaBasligi %></title>
+    <link rel="stylesheet" href="/css/stil.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="aktifBaglanti">Anasayfa</a></li>
+                <li><a href="/urun-ekle">Ürün Ekle</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Anasayfadasınız</h1>
+        <h2>Ürünlerimiz</h2>
+        <ul>
+            <% if(urunler.length>0) {%>
+            <% for(let urun of urunler) {%>
+            <li><%=urun.urun_adi %></li>
+            <% } %>
+            <% }else { %>
+            <li>Ürün yok!</li>
+            <% } %>
+        </ul>
+    </main>
+
+</body>
+
+</html>

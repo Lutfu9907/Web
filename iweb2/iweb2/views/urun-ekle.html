@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+     h1{
+        color: blue;
+     }
+     .active{
+        background-color: palevioletred;
+     }
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Ekle</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li><a href="/">Anasayfa</a></li>
+                <li><a href="/urun-ekle"class="active"  >Ürün Ekle</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Ürün Ekleme Formu</h1>
+        <form action="/urun" method="post">
+
+        Ürün Adı <input type="text" name="urun_adi" id="urun_adi">
+        <input type="submit" name="kaydet" value="Kaydet">
+        </form>
+    </main>
+
+    
+</body>
+</html>
